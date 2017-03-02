@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resumen Luznery Vera</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Luznery Vera">
+    <link rel="stylesheet" type="text/css" href="css/w3schools.library.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <style>
+            body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    b {
+        font-family: 'Leelawadee', sans-serif;
+    }
+    
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+        font-size: 16px;
+        font-weight: 180px;
+    }
+    
+    #myNavbar {
+        background-color: #fff;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .w3-top li a {
+        color: #fff;
+        background: #000;
+    }
+    
+    .w3-top li a:hover {
+        color: #F09DE2;
+        background-color: rgba(240, 157, 226, 0.3);
+    }
+    
+    #myimg {
+        width: 140px;
+        height: 135px;
+    }
+    /* Create a Parallax Effect */
+    
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-4,
+    .bgimg-5 {
+        opacity: 0.7;
+    }
+    /* First image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('imgs/flowers-1325012_1920.jpg');
+        min-height: 600px;
+    }
+    /* Second image (Skills) */
+    
+    .bgimg-2 {
+        background-image: url('imgs/cup-of-coffee-1280537_19201.jpg');
+        min-height: 400px;
+    }
+    /* Third image (Responsive Web Design) */
+    
+    .bgimg-3 {
+        background-image: url('imgs/mockup-654585_1920.jpg');
+        min-height: 400px;
+    }
+    /* Fourth image (Marketing Digital) */
+    
+    .bgimg-4 {
+        background-image: url('imgs/141119_em_facebookwork.jpg');
+        min-height: 400px;
+    }
+    /* Firth image (Contact) */
+    
+    .bgimg-5 {
+        background-image: url('imgs/flower-1451676_1920.jpg');
+        min-height: 400px;
+    }
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    
+    .desc {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    
+    .logo-u {
+        height: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    
+    .logo-n {
+        height: 60px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .logo-SK {
+        height: 80px;
+    }
+    
+    .text-logo {
+        text-align: center;
+    }
+    
+    .logo-JH {
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .logo-c {
+        height: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .logo-e {
+        height: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    
+    .bg-sk1 {
+        margin-left: 100px;
+    }
+    
+    .bg-sk2 {
+        margin-left: 180px;
+    }
+    
+    .bg-text {
+        color: #fff;
+        background-color: #F09DE2;
+    }
+    
+    .wrapper a {
+        text-decoration: none !important;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+    }
+    
+    .social-icons a {
+        text-decoration: none;
+        color: #F09DE2;
+    }
+    
+    .fa-codepen:hover {
+        color: #000;
+    }
+    
+    .fa-github:hover {
+        color: #070709;
+    }
+    
+    .fa-github {
+        margin-top: 10px;
+        padding-right: 40px;
+    }
+    
+    .fa-codepen {
+        padding-right: 100px;
+    }
+    
+    .fa-google-plus:hover {
+        color: #CF3D2E;
+    }
+    
+    .gly-blogger {
+        width: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+    .fa-twitter:hover {
+        color: #32CCFE;
+    }
+    
+    .fa-google-plus:hover {
+        color: #CF3D2E;
+    }
+    
+    .fa-linkedin:hover {
+        color: #0085AE;
+    }
+    
+    .my-s {
+        width: 100px;
+    }
+    
+    footer a {
+        color: #00B1F0;
+    }
+    
+    footer a:hover {
+        color: #F09DE2;
+    }
+    
+    @font-face {
+        font-family: 'glyphicon-chevron-up';
+        src: url('../fonts/glyphicons-halfing-regular.ttf') format('truetype');
+    }
+    /********** Small devices only **********/
+    
+    @media screen and (max-width: 768px) {
+        .bg-1 {
+            margin-top: 150px;
+        }
+        .bg-2 {
+            margin-top: 100px;
+        }
+        .logo-n {
+            height: 45px;
+        }
+        .my-text {
+            margin-top: 50px;
+        }
+        @media screen and (max-width: 900px) {
+            .bg-3 {
+                width: 100%;
+            }
+            /* Turn off parallax scrolling for tablets and mobiles */
+            @media only screen and (max-width: 1024px) {
+                .bgimg-1,
+                .bgimg-2,
+                .bgimg-3,
+                .bgimg-4,
+                .bgimg-5 {
+                    background-attachment: scroll;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top" role="listbox">
+        <ul class="w3-navbar" id="myNavbar">
+            <li><a href="index.html" class="w3-padding-large">Home</a></li>
+            <li><a href="#about" class="w3-padding-large active">About</a></li>
+            <li><a href="#skills" class="w3-padding-large active">Skills</a></li>
+            <li><a href="#contact" class="w3-padding-large active">Contact</a></li>
+            <li class="w3-hide-small w3-right">
+                <a href="#" class="w3-padding-large w3-hover-red"><i class="glyphicon glyphicon-search"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-opacity w3-display-container">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">LUZNERY<span class="w3-hide-small"> VERA</span></span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <div class="bg-1">
+            <h3 class="w3-center">ABOUT ME</h3>
+            <p class="w3-center"><em>I love Web Development and Digital Marketing</em></p>
+            <p>I am a professional in the Administration and Accounting, Competitive, Creative that is expanding its abilities with the Web Development and Digital Marketing. I think it's a good combination in these changing times where technologies drive you to take on new challenges. And that is my challenge the knowledge and the experience in the time of the development and the digital communication.</p>
+            <div class="w3-row">
+                <div class="w3-col m6 w3-center w3-section">
+                    <p><b>Luznery Vera</b></p>
+                    <br>
+                    <img id="myimg" src="imgs/Neny.png" class="w3-circle" alt="founder">
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-section">
+                    <p>My Resumen is interactive I try to show the route I have taken to learn about Web Development and Digital Marketing. You can click on the links and know where I have learned and with whom. Although there is much to go around I want to encourage others to just try.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container" id="skills">
+        <div class="w3-display-middle my-text">
+            <span class="w3-xlarge w3-text-white w3-wide bg-text">SKIllS</span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <!-- Section Web Developer -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><code>WEB DEVELOPER</code></h3>
+        <h4 class="w3-center"><code>Time Line</code></h4>
+        <h4 class="w3-center"><code>2015</code></h4>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-center w3-half">
+            <img src="imgs/HTML5_Logo_512.png" alt="Html5 logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#E54D26"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">October 17, 2015 & Intermediate</text>
+                </svg>
+            </div>
+        </div>
+        <div class="w3-container w3-center w3-half">
+            <img src="imgs/class-header-semantics.jpg" alt="CSS3 logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#1572B7"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">November 16, 2015 & Intermediate</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-content w3-container w3-padding-64">
+            <h4 class="w3-center"><code>2016</code></h4>
+        </div>
+        <div class="w3-container w3-center w3-half">
+            <img src="imgs/600px-JavaScript-logo.png" alt="JavaScript logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#F5D100"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">January 15, 2016 & Basic</text>
+                </svg>
+            </div>
+        </div>
+        <div class="w3-container w3-center w3-half">
+            <img src="imgs/144px-Bootstrap_logo.svg.png" alt="Bootstrap logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#3D0848"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">July 31, 2016 & Intermediate</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-content w3-container w3-center">
+            <img src="imgs/w3schools.jpg" alt="w3.css logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#29B400"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">July 31, 2016 & Intermediate</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-content w3-container w3-padding-64">
+            <h4 class="w3-center"><code>2017</code></h4>
+        </div>
+        <div class="w3-container w3-center w3-half">
+            <img src="imgs/jquery-mark-dark.gif" alt="jquery logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#89CEF7"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">January 10, 2017 & Basic</text>
+                </svg>
+            </div>
+        </div>
+        <div class="w3-container w3-center w3-half">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/2000px-AJAX_logo_by_gengns.svg.png" alt="Ajax logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#0683CE"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">January 10, 2017 & Basic</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-content w3-container w3-center">
+            <img src="imgs/GitHub-Mark.png" alt="GitHub logo" class="w3-hover-opacity logo-SK">
+            <div class="text-logo">
+                <svg>
+                    <circle cx="20" cy="20" r="10" fill="#000"></circle>
+                    <text fill="#000" font-size="16" font-family="Segoe UI" x="35" y="25">January 10, 2017 & Intermediate</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- Container (Universities Section) -->
+    <div class="w3-row-padding">
+        <h3 class="w3-center">LEARNING</h3>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+            <a href="https://www.coursera.org/specializations/web-design" target="_blank" title="Web Design For Everybody Specialization"><img src="imgs/University_of_Michigan_logo.png" alt="University of Michigan logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+        <div class="w3-container w3-third">
+            <a href="https://www.coursera.org/learn/responsive-web-design" title="Learn Responsive Web Design" target="_blank"><img src="imgs/University-of-London.jpg" alt="University of London logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+        <div class="w3-container w3-third">
+            <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" title="Learn HTML, CSS and JavaScript for Web Developers" target="_blank"><img src="imgs/university_logo_small_vertical_blue.png" alt="Johns Hopkins University logo" class="w3-hover-opacity logo-JH"></a>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-third">
+            <a href="https://www.edx.org/course/html5-part-1-html5-coding-essentials-w3cx-html5-1x-1" title="Learn Html5 with W3Cx" target="_blank"> <img src="https://www.w3.org/Icons/WWW/w3c_home_nb-v.svg" alt="W3C logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+        <div class="w3-container w3-third">
+            <a href="http://www.w3schools.com/w3css/default.asp" title="Learn W3.CSS" target="_blank"><img src="imgs/w3schools.jpg" alt="w3schools logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+        <div class="w3-container w3-third">
+            <a href="https://www.edx.org/course/introduction-html-javascript-microsoft-dev211-1x-0" title="Introduction Html, JavaScript" target="_blank"><img src="imgs/microsoft-80658_1280.png" alt="Microsoft logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+        <div class="w3-container w3-center">
+            <a href="https://www.edx.org/course/advanced-css-concepts-microsoft-dev218x" title="Advanced CSS concepts" target="_blank"><img src="imgs/microsoft-80658_1280.png" alt="Microsoft logo" class="w3-hover-opacity logo-u"></a>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-text-white w3-wide bg-text">RESPONSIVE WEB DESIGN</span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <!-- Section Responsive Web Design -->
+    <div class="w3-content w3-container w3-padding-64 w3-center">
+        <h3 class="w3-center">Responsive Web Design</h3>
+        <h4 class="w3-center">Portfolio</h4>
+        <div class="social">
+            <div class="row">
+                <div class="wrapper">
+                    <ul class="social-icons w3-center">
+                        <li>
+                            <a class="fa fa-codepen fa-2x" aria-hidden="true" target="_blank" href="http://codepen.io/Luznery1/" style="font-size:35px;"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-github fa-2x" aria-hidden="true" target="_blank" href="https://github.com/LuzneryVera1" style="font-size:35px;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fourth Parallax Image with Portfolio Text -->
+    <div class="bgimg-4 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xlarge w3-text-white w3-wide bg-text">MARKETING DIGITAL</span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <!-- Section Marketing Digital -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Content Curator, Social Media and Blogger</h3>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-center">
+            <a href="http://myfirstblogvenezuela.blogspot.com/" target="_blank" title="My First Blog Venezuela"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg" alt="Blogger logo" class="w3-hover-opacity gly-blogger"></a>
+            <a href="http://brandsandstartupvenezuela.blogspot.com/" target="_blank" title="Brands and Startup Venezuela"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Blogger.svg" alt="Blogger logo" class="w3-hover-opacity gly-blogger"></a>
+        </div>
+    </div>
+    <!-- Container (Universities Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">LEARNING</h3>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-half">
+            <a href="https://www.coursera.org/specializations/content-strategy" target="_blank" title="Content Strategy Specialization"><img src="imgs/Northwestern_Formal_horizontal.png" alt="Northwestern University logo" class="w3-hover-opacity logo-n"></a>
+        </div>
+        <div class="w3-container w3-half">
+            <a href="https://www.coursera.org/specializations/social-media-marketing" target="_blank" title="Social Media Marketing Specialization"><img src="imgs/Northwestern_Formal_horizontal.png" alt="Northwestern University logo" class="w3-hover-opacity logo-n"></a>
+        </div>
+    </div>
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">THROUGH</h3>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-container w3-center">
+            <a href="https://www.coursera.org/" title="Coursera Courses" target="_blank"><img src="imgs/coursera_logo.png" alt="coursera logo" class="w3-hover-opacity logo-c"></a>
+            <a href="https://www.edx.org/" title="edX Courses" target="_blank"><img src="imgs/edx-logo-header.png" alt="edx logo" class="w3-hover-opacity logo-e"></a>
+        </div>
+    </div>
+    <!-- Fifth Parallax Image with Portfolio Text -->
+    <div class="bgimg-5 w3-display-container" id="contact">
+        <div class="w3-display-middle">
+            <div class="bg-2">
+                <span class="w3-xlarge w3-text-white w3-wide bg-text">CONTACT</span>
+            </div>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">WHERE I WORK</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+        <!-- Container Swing By & Contact -->
+        <div class="w3-half w3-container w3-center w3-animate-opacity" style="height:510px">
+            <div class="w3-padding-64">
+                <h1>Swing By</h1>
+            </div>
+            <div class="w3-padding-64">
+                <p>Swing by for a cup of coffee, or leave me a note:</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Upata, VE</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> mail: mail@mail.com</p>
+            </div>
+        </div>
+        <!-- End Swing -->
+        <div class="w3-half w3-container" style="height:510px">
+            <!-- contact section -->
+            <div class="w3-padding-64 w3-padding-xlarge w3-center">
+                <h1>Contact</h1><span class="glyphicon glyphicon-envelope"></span>
+                <p class="w3-container w3-center w3-animate-opacity">GET IN TOUCH</p>
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-12 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <h4>Leave a Comment:</h4>
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Section Social -->
+    <div class="w3-content w3-container w3-padding-64 w3-center">
+        <h4 class="w3-center">Follow me</h4>
+        <div class="social">
+            <div class="row">
+                <div class="wrapper">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="fa fa-twitter fa-2x my-s" aria-hidden="true" target="_blank" href="https://twitter.com/LuzneryVera" style="font-size:25px;"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-google-plus fa-2x my-s" aria-hidden="true" target="_blank" href="https://plus.google.com/u/0/102145835179788997094" style="font-size:25px;"></a>
+                        </li>
+                        <li>
+                            <a class="fa fa-linkedin fa-2x my-s" aria-hidden="true" target="_blank" href="http://ve.linkedin.com/pub/luznery-del-carmen-vera-mu%C3%B1oz/81/b1a/b9b/" style="font-size:25px;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+        <a href="index.html" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up" style="font-size: 30px;"></span></a>
+        <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> w3.css</a> and <a href="http://getbootstrap.com" title="Bootstrap" target="_blank" class="w3-hover-opacity">Bootstrap</a>
+            <br> &copy; Copyright 2017<a href="https://twitter.com/LuzneryVera" target="_blank"> Luznery Vera</a>
+    </footer>
+</body>
+
+</html>
